@@ -2,6 +2,12 @@
 
 Capitalizes, titlecases, camelizes, kebabcases, pascalizes or hyphenates strings.
 
+<p/>
+<img src="https://nodei.co/npm/upperlower.png?downloads=true&stars=true" alt=""/>
+
+<p/>
+<img src="https://david-dm.org/nihilor/upperlower.png" alt=""/>
+
 ## Abstract
 
 Upperlower converts strings and lists of strings into different notations as used in the field of information technology and software engineering. This is necessary to be able to quickly adapt different styles in different contexts.
