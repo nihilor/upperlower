@@ -1,0 +1,26 @@
+{
+  "name": "upperlower",
+  "version": "0.1.0",
+  "description": "Capitalizes, camelizes, kebabcases, pascalizes or hyphenates strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihilor/upperlower.git"
+  },
+  "keywords": [
+    "capitalize",
+    "camelize",
+    "kebapcase",
+    "pascalize",
+    "hyphenate"
+  ],
+  "author": "Mark Lubkowitz <mail@mark-lubkowitz.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nihilor/upperlower/issues"
+  },
+  "homepage": "https://github.com/nihilor/upperlower#readme"
+}
