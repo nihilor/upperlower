@@ -1,26 +1,20 @@
 {
-  "name": "upperlower",
-  "version": "0.4.0",
-  "description": "Capitalizes, camelizes, kebabcases, pascalizes, titlecases or hyphenates strings.",
-  "main": "index.js",
+  "name":           "upperlower",
+  "version":        "0.4.1",
+  "description":    "Capitalizes, camelizes, kebabcases, pascalizes, titlecases or hyphenates strings.",
+  "main":           "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":         "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nihilor/upperlower.git"
+    "type":         "git",
+    "url":          "git+https://github.com/nihilor/upperlower.git"
   },
-  "keywords": [
-    "capitalize",
-    "camelize",
-    "kebapcase",
-    "pascalize",
-    "hyphenate"
-  ],
-  "author": "Mark Lubkowitz <mail@mark-lubkowitz.de>",
-  "license": "MIT",
+  "keywords":       [ "capitalize", "camelize", "kebapcase", "pascalize", "hyphenate", "titlecase" ],
+  "author":         "Mark Lubkowitz <mail@mark-lubkowitz.de>",
+  "license":        "MIT",
   "bugs": {
-    "url": "https://github.com/nihilor/upperlower/issues"
+    "url":          "https://github.com/nihilor/upperlower/issues"
   },
-  "homepage": "https://github.com/nihilor/upperlower#readme"
+  "homepage":       "https://github.com/nihilor/upperlower#readme"
 }

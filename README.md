@@ -10,11 +10,11 @@ Capitalizes, titlecases, camelizes, kebabcases, pascalizes, titlecases or hyphen
 
 ## Abstract
 
-Upperlower converts strings and lists of strings into different notations as used in the field of information technology and software engineering. This is necessary to be able to quickly adapt different styles in different contexts.
+[Upperlower](https://github.com/nihilor/upperlower) converts strings and lists of strings into different notations as used in the field of information technology, software engineering and publishing. This is necessary to be able to quickly adapt different styles in different contexts without the risk of typing errors.
 
 ## Rationale
 
-Depending on the context, the spelling of identifiers varies. In order to avoid conflicts that can arise with multiple different definitions of identifiers, Upperlower converts these identifiers generically into different equivalents.
+Depending on the context, the spelling of identifiers and text varies. In order to avoid conflicts that can arise with multiple different definitions of identifiers and text, [Upperlower](https://github.com/nihilor/upperlower) converts these identifiers generically into different equivalents.
 
 ## Notations
 
@@ -38,7 +38,7 @@ $ npm install upperlower
 <string> upperlower(<string|array> source[, <string> notation[, <boolean> isHyphenated]])
 ```
 
-You may provide a string or an array of strings as the `source`. An array will be treated like a string with blank spaced words. By default `source` will capitalized. If `isHyphenated` equals true, upperlower will split strings by dashes, not by whitespace.
+You may provide a string or an array of strings as the `source`. An array will be treated like a string with blank spaced words. By default `source` will be capitalized, but you may choose between the following styles: `capitalize`, `allcaps`, `camelcase`, `pascalcase`, `kebapcase`, `hyphenate`, and `titlecase`. Additionally, if `isHyphenated` equals true, [Upperlower](https://github.com/nihilor/upperlower) will split strings by dashes, underscores and dots, not by whitespace.
 
 ## Examples
 
