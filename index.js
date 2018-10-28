@@ -62,9 +62,22 @@ var upperlower = function (source, notation = "capitalize", isHyphenated = false
             output = output + source.join('')
             break
 
-        case "titlecase":
+        case "allcaps":
             source = source.map(token => capitalize(token))
             output = source.join(' ')
+            break
+
+        case "titlecase":
+            let trivials = [
+                "a", "an", "the",
+                "and", "or", "but", /* "nor", "for", "so", "yet" */
+                "on", "in", "at", "by", "for", "of", "off", "to", "up"
+            ]
+            output = capitalize(source.shift())
+            source = source.map(token => {
+                return !trivials.includes(token.toLowerCase()) ? capitalize(token) : token.toLowerCase()
+            })
+            output = output + " " + source.join(' ')
             break
 
         case "capitalize":

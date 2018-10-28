@@ -1,6 +1,6 @@
 {
   "name": "upperlower",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Capitalizes, camelizes, kebabcases, pascalizes or hyphenates strings.",
   "main": "index.js",
   "scripts": {

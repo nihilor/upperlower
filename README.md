@@ -19,7 +19,7 @@ Depending on the context, the spelling of identifiers varies. In order to avoid 
 ## Notations
 
 - **Capitalize**: The first letter is capitalized.
-- **Title Case**: The first letter of each major word is capitalized.
+- **Title Case**: The first letter of each principal word is capitalized. Exceptions are articles, conjunctions and prepositions. Currently the Associated Press Style is used, meaning all word longer than three letters will be capitalized.
 - **camelCase**/**lowerCamelCase**: The first letter of each word except the first one is capitalized and blank characters are removed.
 - **PascalCase**/**UpperCamelCase**: The first letter of each word is capitalized and blank characters are removed.
 - **kebap-case**: All words are written in lower case and blank characters are replaced with hyphens.
@@ -45,12 +45,13 @@ You may provide a string or an array of strings as the `source`. An array will b
 ```javascript
 const upperlower = require("upperlower");
 
-let capitalized = upperlower("hello");                     // -> Hello
-let titlecased  = upperlower("hello world", "titlecase");  // -> Hello World
-let camelcased  = upperlower("hello world", "camelcase");  // -> helloWorld
-let pascalcased = upperlower("hello world", "pascalcase"); // -> HelloWorld
-let kebapcased  = upperlower("hello world", "kebapcase");  // -> hello-world
-let hyphenated  = upperlower("Hello World", "hyphenate");  // -> Hello-World
+let capitalized = upperlower("hello");                            // Hello
+let capsed      = upperlower("hello to the world", "allcaps");    // Hello To The World
+let titlecased  = upperlower("hello to the world", "titlecase");  // Hello to the World
+let camelcased  = upperlower("hello world", "camelcase");         // helloWorld
+let pascalcased = upperlower("hello world", "pascalcase");        // HelloWorld
+let kebapcased  = upperlower("hello world", "kebapcase");         // hello-world
+let hyphenated  = upperlower("Hello World", "hyphenate");         // Hello-World
 ```
 
 ## License
