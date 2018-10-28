@@ -45,14 +45,29 @@ You may provide a string or an array of strings as the `source`. An array will b
 ```javascript
 const upperlower = require("upperlower");
 
-let capitalized = upperlower("hello");                                  // Hello
-let capsed      = upperlower("hello to the world", "allcaps");          // Hello To The World
-let titlecased  = upperlower("hello to the world", "titlecase");        // Hello to the World
-let camelcased  = upperlower("hello world", "camelcase");               // helloWorld
-let pascalcased = upperlower("hello world", "pascalcase");              // HelloWorld
-let kebapcased  = upperlower("hello world", "kebapcase");               // hello-world
-let hyphenated  = upperlower("Hello World", "hyphenate");               // Hello-World
-let hypens      = upperlower("hello_to.the-world", "kebapcase", true);  // hello-to-the-world
+//  Hello
+let capitalized = upperlower("hello");
+
+//  Hello To The World
+let capsed      = upperlower("hello to the world", "allcaps");
+
+//  Hello to the World
+let titlecased  = upperlower("hello to the world", "titlecase");
+
+//  helloWorld
+let camelcased  = upperlower("hello world", "camelcase");
+
+//  HelloWorld
+let pascalcased = upperlower("hello world", "pascalcase");
+
+//  hello-world
+let kebapcased  = upperlower("hello world", "kebapcase");
+
+//  Hello-World
+let hyphenated  = upperlower("Hello World", "hyphenate");
+
+//  hello-to-the-world
+let hypens      = upperlower("hello_to.the-world", "kebapcase", true);
 ```
 
 ## License
