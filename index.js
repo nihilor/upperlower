@@ -37,56 +37,63 @@ var upperlower = function (source, notation = "capitalize", isHyphenated = false
     }
 
     if (typeof source === "string")
-        source = source.split(isHyphenated ? "-" : /\s/)
+        source = source.split(isHyphenated ? /[_.\-]+/ : /\s+/)
 
-    let output = ""
+    let output = []
+    let separator = ""
     switch (notation) {
 
         case "hyphenate":
-            output = source.join('-')
+            separator = "-"
+            output = source
             break
 
         case "kebapcase":
-            source = source.map(token => token.toLowerCase())
-            output = source.join('-')
+            separator = "-"
+            output = source.map(token => token.toLowerCase())
             break
 
         case "pascalcase":
-            source = source.map(token => capitalize(token))
-            output = output + source.join('')
+            output = source.map(token => capitalize(token))
             break
 
         case "camelcase":
-            output = source.shift()
-            source = source.map(token => capitalize(token))
-            output = output + source.join('')
+            output = output.concat(
+                source.shift(),
+                source.map(token => capitalize(token))
+            )
             break
 
         case "allcaps":
-            source = source.map(token => capitalize(token))
-            output = source.join(' ')
+            separator = " "
+            output = source.map(token => capitalize(token))
             break
 
         case "titlecase":
+            separator = " "
             let trivials = [
                 "a", "an", "the",
                 "and", "or", "but", /* "nor", "for", "so", "yet" */
                 "on", "in", "at", "by", "for", "of", "off", "to", "up"
             ]
-            output = capitalize(source.shift())
-            source = source.map(token => {
-                return !trivials.includes(token.toLowerCase()) ? capitalize(token) : token.toLowerCase()
-            })
-            output = output + " " + source.join(' ')
+            output = output.concat(
+                capitalize(source.shift()),
+                source.map(token => {
+                    return token.length > 3 || !trivials.includes(token.toLowerCase())
+                        ? capitalize(token)
+                        : token.toLowerCase()
+                })
+            )
             break
 
         case "capitalize":
         default:
+            separator = " "
             source[ 0 ] = capitalize(source[ 0 ])
-            output = source.join(' ')
+            output = source
     }
 
-    return output
+    return output.join(separator)
 }
 
 module.exports = upperlower

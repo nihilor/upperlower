@@ -1,7 +1,7 @@
 {
   "name": "upperlower",
-  "version": "0.3.0",
-  "description": "Capitalizes, camelizes, kebabcases, pascalizes or hyphenates strings.",
+  "version": "0.4.0",
+  "description": "Capitalizes, camelizes, kebabcases, pascalizes, titlecases or hyphenates strings.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
