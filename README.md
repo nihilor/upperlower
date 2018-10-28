@@ -35,10 +35,10 @@ $ npm install upperlower
 ## Usage
 
 ```
-<string> upperlower(<string|array> source[, <string> notation])
+<string> upperlower(<string|array> source[, <string> notation[, <boolean> isHyphenated]])
 ```
 
-You may provide a string or an array of strings as the `source`. An array will be treated like a string with blank spaced words. By default `source` will capitalized.
+You may provide a string or an array of strings as the `source`. An array will be treated like a string with blank spaced words. By default `source` will capitalized. If `isHyphenated` equals true, upperlower will split strings by dashes, not by whitespace.
 
 ## Examples
 
