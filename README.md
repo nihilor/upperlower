@@ -1,6 +1,6 @@
 # upperlower
 
-Capitalizes, titlecases, camelizes, kebabcases, pascalizes, titlecases or hyphenates strings.
+Capitalizes, titlecases, camelizes, kebabcases, pascalizes or hyphenates strings.
 
 <p/>
 <img src="https://nodei.co/npm/upperlower.png?downloads=true&stars=true" alt=""/>
