@@ -16,5 +16,6 @@
   "bugs": {
     "url":          "https://github.com/nihilor/upperlower/issues"
   },
-  "homepage":       "https://github.com/nihilor/upperlower#readme"
+  "homepage":       "https://github.com/nihilor/upperlower#readme",
+  "dependencies":   []
 }
